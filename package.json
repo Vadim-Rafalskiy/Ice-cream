@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Andriy-Kond/Ice-Cream",
+  "homepage": "https://Vadim-Rafalskiy/Ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Ice-Cream/"
+    "build": "parcel build src/*.html --public-url /Ice-cream/"
   },
   "repository": {
     "type": "git",
