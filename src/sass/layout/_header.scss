@@ -23,13 +23,9 @@
     }
 
     @media screen and (min-width: $desctop) {
-        margin-left: 146px;
+        margin-left: auto;
     }
 }
-
-
-
-
 
 .menu {
     display: flex;
@@ -44,10 +40,7 @@
 }
 
 .menu__item {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    color: $text-light-color;
+
     cursor: pointer;
 
     &:not(:last-child) {
@@ -58,4 +51,11 @@
     &:focus {
         color: $brand-second-color;
     }
+}
+
+.menu__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $text-light-color;
 }
