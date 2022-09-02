@@ -1,41 +1,71 @@
-<section class="about">
+<section class="section">
 
        <div class="container">
 
-              <div class="title-box">
+          
 
-                     <h3 class="title">Tradition and love</h3>
+                     <p class="about__title">Tradition and love</p>
 
-                     <h2 class="title-made">How it’s made?</h2>
-              </div>
+                     <h3 class="about__title-made">How it’s made?</h3>
+            
  
       
   
-       <div class="img__cow">
+       <div class="about-img">
                 
-        <img class="img__home" src="./images/desctop/about-home.jpg" alt="home"  width="500" height="500" />  
-        <img class="img" src="./images/desctop/about-cow-1x-min.jpg" alt="cow" width="490" height="490" />         
-                  
+        
+              
+          
+        
+          <picture>
+                <source
+                  srcset="
+                    ./images/desctop/about-cow-1x-min.jpg 1x,
+                   ./images/desctop/about-cow-2x-min.jpg 2x
+                  "
+                  media="(max-width: 797px)"
+                />
+                <source
+                  srcset="
+                  ./images/desctop/about-cow-1x-min.jpg  1x,
+                   ./images/desctop/about-cow-2x-min.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                  ./images/desctop/about-cow-1x-min.jpg  1x,
+                  ./images/desctop/about-cow-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="about__img-cow"
+                  src="./images/desctop/about-cow-1x-min.jpg"
+                  alt="cow"
+                />
+        
+              </picture>
        </div>         
               
               
    
    
      
-<div class="text__content">
+<div class="about">
 
-       <div>
+    
 
-              <p class="text">
+              <p class="about__text">
                Ice is a place where you will become not only a little happier, but also healthier.
                Health is the main value for us, and we follow it when creating our handmade desserts.    
               </p>
 
-       </div>  
+    
 
-       <div>
+      
 
-              <p class="text__info">
+              <p class="about__text-info">
                We use traditional recipes and 100% natural ingredients.
                Our products are so natural that they can be given to children from the age of three years.
                Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
@@ -46,7 +76,7 @@
       <button
           type="button" class="button about__btn" data-modal-open>Read more&nbsp;&nbsp;&nbsp;&nbsp;&#x276F;
       </button>
-       </div>
+     
 
  </div>
 </div>
