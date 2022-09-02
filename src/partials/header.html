@@ -2,9 +2,11 @@
   <div class="container">
     <!-- svg or img? -->
     <div class="header">
-      <svg class="logo">
-        <use href="./images/icons.svg#logo" class="logo__icon"></use>
-      </svg>
+      <a href="./" class="logo">
+        <svg class="logo__image">
+          <use href="./images/icons.svg#logo" class="logo__icon"></use>
+        </svg>
+      </a>
 
       <nav class="nav">
         <ul class="menu">
@@ -15,31 +17,27 @@
           <li class="menu__item">Contact</li>
         </ul>
       </nav>
-      <button type="button" class="btn btn__header">
-        Buy now&nbsp;&nbsp;&nbsp;&nbsp;&#x276F;
-        <!-- <svg class="btn__arrow">
-          <use href="./images/icons.svg#arrow-angle" class="btn__icon"></use>
-        </svg> -->
+
+      <button type="button" class="btn-mobile-open" data-menu-open>
+        <picture>
+          <source
+            srcset="
+              ./images/svgs/Burger-1x.png 1x,
+              ./images/svgs/Burger-2x.png 2x,
+              ./images/svgs/Burger-3x.png 3x
+            "
+            media="(max-width: 1199px)"
+          />
+          <img
+            src="./images/svgs/Burger-1x.png"
+            alt="open menu"
+            class="btn-mobile-open__icon"
+          />
+        </picture>
       </button>
 
-      <button
-        type="button"
-        class="btn-mobile"
-        aria-expanded="false"
-        aria-controls="id-menu-container"
-        data-menu-button
-      >
-        <svg class="btn-mobile__icon" aria-label="Перемикач мобільного меню">
-          <use
-            class="icon-open"
-            href="./images/background/icons.svg#burger"
-          ></use>
-
-          <use
-            class="icon-close"
-            href="./images/background/icons.svg#mobile-close"
-          ></use>
-        </svg>
+      <button type="button" class="btn btn__header">
+        Buy now&nbsp;&nbsp;&nbsp;&nbsp;&#x276F;
       </button>
     </div>
   </div>

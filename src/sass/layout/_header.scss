@@ -1,15 +1,46 @@
 .header {
     display: flex;
-    padding-top: 16px;
+    padding-top: 12px;
     align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 28px;
+    }
 }
 
-@media screen and (max-width: ($tablet - 1)) {}
+
+.btn__header {
+    margin-left: 31px;
+
+    @media screen and (max-width: ($tablet - 1)) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-left: 146px;
+    }
+}
+
+
+
+
 
 .menu {
     display: flex;
     margin-left: 268px;
-    padding: 23px 0;
+    padding: 12px 0;
+}
+
+@media screen and (max-width: ($desctop - 1)) {
+    .menu {
+        display: none;
+    }
 }
 
 .menu__item {
@@ -27,8 +58,4 @@
     &:focus {
         color: $brand-second-color;
     }
-}
-
-.btn__header {
-    margin-left: 146px;
 }

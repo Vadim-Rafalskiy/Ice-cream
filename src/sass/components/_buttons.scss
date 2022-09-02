@@ -21,6 +21,20 @@
     }
 }
 
+.btn-mobile {
+    // display: flex;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    // line-height: 0;
+}
+
+.btn-mobile__icon {
+    width: 20px;
+    height: 12px;
+    // background-color: $brand-main-color;
+}
+
 
 
 // .btn::after {
