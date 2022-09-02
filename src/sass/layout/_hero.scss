@@ -1,0 +1,326 @@
+.hero {
+  position: relative;
+  outline: 1px solid tomato;
+
+  // @media screen and (max-width: 767px) {
+  // width: 320px;
+  width: 100%;
+  padding-top: 61px;
+  padding-bottom: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  // }
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @media screen and(min-width:$tablet) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    padding-top: 28px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.main-title-wrapper {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-title-inner {
+  @media screen and(max-width:767px) {
+    max-width: 250px;
+  }
+  @media screen and(min-width:$tablet) {
+    max-width: 181px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    max-width: 367px;
+  }
+}
+
+.main-title {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-light-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+//<span> passion </span>
+.main-title__accent {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 0.97;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-btn-wrapper {
+  @media screen and(max-width:767px) {
+    margin-top: 32px;
+  }
+  @media screen and(min-width:$tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    margin-top: 28px;
+  }
+}
+
+.hero-btn {
+  width: 62px;
+  height: 24px;
+  margin-right: 16px;
+  padding: 0;
+
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.13;
+  align-items: center;
+  text-align: center;
+
+  color: $text-simple-dark-color;
+  background-color: inherit;
+
+  border: 2px solid $brand-second-color;
+  border-radius: 8px;
+
+  // @media screen and(min-width:768px) {
+  //   margin-right: 16px;
+  // }
+
+  @media screen and(min-width:$desctop) {
+    width: 138px;
+    height: 42px;
+    margin-right: 32px;
+
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  &:hover,
+  &:focus {
+    border-color: $focus-color;
+  }
+}
+
+.hero-btn-2 {
+  padding: 0;
+  height: 24px;
+
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $brand-second-color;
+  background-color: inherit;
+  border: 0;
+
+  align-items: center;
+  text-decoration-line: underline;
+  @media screen and(min-width:$desctop) {
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  &:hover,
+  &:focus {
+    color: $focus-color;
+  }
+}
+
+.trade-network {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+}
+
+.trade-network__list {
+}
+
+.trade-network__item {
+  font-family: $font-main;
+  text-align: right;
+  color: $text-light-color;
+
+  &:not(:last-child) {
+    @media screen and(min-width:$tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and(min-width:$desctop) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.trade-network__info {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  // color: $text-light-color;
+
+  @media screen and(min-width:$desctop) {
+    font-size: 14px;
+    line-height: 1.21;
+
+    // color: $text-dark-color;
+  }
+}
+
+.trade-network__accent {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-simple-dark-color;
+
+  @media screen and(min-width:$desctop) {
+    font-size: 46px;
+    line-height: 1.17;
+  }
+}
+
+.hero__picture-main {
+  position: absolute;
+  z-index: 3;
+  @media screen and(max-width:767px) {
+    left: 9%;
+    bottom: -12%;
+  }
+
+  @media screen and(min-width:$tablet) {
+    bottom: -17%;
+    left: 48%;
+  }
+
+  @media screen and(min-width:$desctop) {
+    bottom: -16%;
+    left: 48%;
+  }
+}
+
+.hero__picture-dots {
+  // outline: 2px dotted white;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.product-deck {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.hero__picture-second {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    z-index: 3;
+  }
+
+  @media screen and (min-width: $desctop) {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.hero__info {
+  @media screen and (min-width: $tablet) {
+    width: 151px;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+
+    color: $text-light-color;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 200px;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $text-light-color;
+  }
+
+  &:after {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      content: '';
+      background-image: url(../images/svgs/Arrow.svg);
+    }
+  }
+}
