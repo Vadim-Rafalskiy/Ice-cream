@@ -14,7 +14,14 @@
     background: #F8D24E;
     color: $text-simple-dark-color;
     border: 0;
+
+    &:focus,
+    &:hover {
+        background: $focus-color
+    }
 }
+
+
 
 // .btn::after {
 //     content: "";

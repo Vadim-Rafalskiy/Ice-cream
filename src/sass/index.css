@@ -267,9 +267,9 @@ summary {
 
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #1E252B;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #84A178;
+  color: #000;
 }
 
 body.modal-open {
@@ -335,19 +335,91 @@ button {
 } */
 /* === /HIDDEN === */
 /* === BUTTONS === */
+.btn {
+  width: 150px;
+  height: 42px;
+  padding: 12;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background: #F8D24E;
+  color: #000;
+  border: 0;
+}
+.btn:focus, .btn:hover {
+  background: #0A8817;
+}
+
 /* === /BUTTONS === */
 /* === CONTAINER === */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 16px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 /* === /CONTAINER === */
 /* === SECTION === */
 /* === /SECTION === */
 /* === LOGO === */
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.logo__icon {
+  width: 60px;
+  height: 60px;
+}
+
 /* === /LOGO === */
 /* === SOCIALS === */
-/* === /SOCIALS === *//*# sourceMappingURL=index.css.map */
+/* === /SOCIALS === */
+.header {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  margin-left: 268px;
+  padding: 23px 0;
+}
+
+.menu__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FCFCFC;
+  cursor: pointer;
+}
+.menu__item:not(:last-child) {
+  margin-right: 27px;
+}
+.menu__item:hover, .menu__item:focus {
+  color: #F8D24E;
+}
+
+.btn__header {
+  margin-left: 146px;
+}/*# sourceMappingURL=index.css.map */

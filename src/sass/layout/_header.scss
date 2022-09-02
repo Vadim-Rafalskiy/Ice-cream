@@ -4,6 +4,8 @@
     align-items: center;
 }
 
+@media screen and (max-width: ($tablet - 1)) {}
+
 .menu {
     display: flex;
     margin-left: 268px;
@@ -15,10 +17,16 @@
     font-size: 16px;
     line-height: 1.25;
     color: $text-light-color;
-}
+    cursor: pointer;
 
-.menu__item:not(:last-child) {
-    margin-right: 27px;
+    &:not(:last-child) {
+        margin-right: 27px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $brand-second-color;
+    }
 }
 
 .btn__header {
