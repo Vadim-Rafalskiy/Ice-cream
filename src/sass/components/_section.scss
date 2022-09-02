@@ -1,5 +1,38 @@
 /* === SECTION === */
+.section__sup-title {
+    @include font(800, 18px, 22px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
 
+    margin-bottom: 12px;
+}
+
+.section__title {
+    font-family: $font-title;
+    @include font(400, 30px, 38px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+    .section__sup-title {
+        @include font(800, 22px, 27px, 0.04em);
+    }
+
+    .section__title {
+        @include font(400, 34px, 43px, 0.04em);
+    }
+}
+
+@media screen and (min-width:1200px){
+.section__sup-title {
+    @include font(800, 30px, 37px, 0.04em);
+}
+
+.section__title {
+    @include font(400, 35px, 46px, 0.06em);
+}
+}
 // .section:not(:last-child) {
 //     padding-top: 200px;
 //     padding-bottom: 200px;
