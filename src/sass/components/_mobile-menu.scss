@@ -76,7 +76,7 @@
 
 
 // КНОПКИ
-.btn__mobile-buy {
+.btn-filled--hide {
     @media screen and (min-width: $tablet) {
         display: none;
     }
