@@ -102,6 +102,8 @@
 }
 
 .hero-btn-wrapper {
+  display: flex;
+  align-items: baseline;
   @media screen and(max-width:767px) {
     margin-top: 32px;
   }
@@ -115,27 +117,24 @@
 }
 
 .hero-btn {
+  display: flex;
   width: 62px;
   height: 24px;
   margin-right: 16px;
-  padding: 0;
 
   font-family: $font-second;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.13;
+
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   color: $text-simple-dark-color;
   background-color: inherit;
 
   border: 2px solid $brand-second-color;
   border-radius: 8px;
-
-  // @media screen and(min-width:768px) {
-  //   margin-right: 16px;
-  // }
 
   @media screen and(min-width:$desctop) {
     width: 138px;
@@ -154,6 +153,7 @@
 }
 
 .hero-btn-2 {
+  display: block;
   padding: 0;
   height: 24px;
 
