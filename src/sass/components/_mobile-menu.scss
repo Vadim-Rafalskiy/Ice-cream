@@ -56,6 +56,10 @@
     }
 }
 
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .mobile-menu__link {
     font-weight: 700;
     font-size: 32px;
@@ -63,9 +67,12 @@
     color: $text-light-color;
 }
 
-.mobile-menu__item:not(:last-child) {
-    margin-bottom: 32px;
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+    color: $text-simple-dark-color;
 }
+
+
 
 
 // КНОПКИ
