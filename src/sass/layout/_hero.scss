@@ -6,13 +6,18 @@
   // width: 320px;
   width: 100%;
   padding-top: 61px;
-  padding-bottom: 240px;
+  // padding-bottom: 240px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   // }
 
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width: $mobile) {
     width: 480px;
     margin: 0 auto;
@@ -233,16 +238,29 @@
   }
 }
 
+.picture-wrapper {
+  // outline: white dotted;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    height: 240px;
+    position: relative;
+  }
+}
+
 .hero__picture-main {
   position: absolute;
   z-index: 3;
   @media screen and(max-width:767px) {
     left: 9%;
-    bottom: -12%;
+    bottom: -23%;
   }
+  // @media screen and(max-width:767px) {
+  //   left: 9%;
+  //   bottom: -12%;
+  // }
 
   @media screen and(min-width:$tablet) {
-    bottom: -17%;
+    bottom: -16%;
     left: 48%;
   }
 
@@ -254,12 +272,14 @@
 
 .hero__picture-dots {
   // outline: 2px dotted white;
-  width: 100%;
+  // width: 100%;
   position: absolute;
   z-index: 2;
-  left: 50%;
-  transform: translateX(-50%);
+  // left: 50%;
+  // transform: translateX(-50%);
   bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .product-deck {
