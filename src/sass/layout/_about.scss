@@ -1,3 +1,31 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: $desctop) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about__btn {
 
     width: 150px;
@@ -20,58 +48,12 @@
 }
 
 
-.about__text {
-    font-family: $font-main;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-
-    color: $text-light-color;
-
-    
-        @media screen and (min-width: 768px) {
-            
-              font-size: 12px;
-    
-    
-            }
-        
-    
-        @media screen and (min-width: 1200px) {
-            
-            font-size: 16px;
-              
-            }
-        }
-
-.about__text-info {
-    font-family: $font-main;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 194%;
-    letter-spacing: 0.04em;
-
-    color: $text-light-color;
-
-    
-        @media screen and (min-width: 768px) {
-           
-                font-size: 14px;
-    
-    
-            
-        }
-    
-        @media screen and (min-width: 1200px) {
-          
-                font-size: 16px;
-    
-            }
-        }
 
 
-.about__title {
+
+
+
+.label__title {
     font-family: $font-main;
     margin-bottom: 12px;
     font-weight: 800;
@@ -83,7 +65,7 @@
 
     color:$text-light-color;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
            
                 font-size: 22px;
     
@@ -91,14 +73,14 @@
             }
        
     
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width:  $desctop) {
           
                 font-size: 30px;
     
             }
         }
 
-.about__title-made {
+.about__title {
     font-family:$font-title;
     font-weight: 400;
     font-size: 30px;
@@ -109,7 +91,7 @@
     color: $text-light-color;
 
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             
                 font-size: 34px;
     
@@ -117,7 +99,7 @@
             
         }
     
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width:  $desctop) {
          
                 font-size: 36px;
     
@@ -125,23 +107,30 @@
         }
 
 
-.about   {
+.text-wrapper   {
     width: 220px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 80px;
+   
       
+
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+              
+        
+            }
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
              
-                width: 320px;
+                width: 300px;
                
                 margin-top: 79px;
                 margin-left: 400px;
-               
+                margin-right: 32px;
             
         }
     
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width:  $desctop) {
            
                
                 margin-top: 172px;
@@ -152,26 +141,16 @@
 
 
 
-.about__img-cow {
-  
-    position: absolute;
-    top: 40px;
-   
-    border-radius: 1852.2px;
-   
 
-   
-   
-}
 
 
 
 
       
- .about-img {
+ .img-wrapper {
                
              margin-top: 32px;
-             margin-left: 20px;
+           
              width: 279px;
              height: 300px;
              position: relative;
@@ -180,7 +159,7 @@
              border-radius: 250px;
        
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
            
                 width: 331px;
                 height: 355px;
@@ -194,9 +173,9 @@
             
         }
     
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desctop ) {
           
-                width: 500px;
+                    width: 500px;
                     height: 500px;
                     margin-top: 82px;
                     margin-left: 16px;
@@ -208,3 +187,45 @@
             }
         }
 
+
+
+.about__img {
+  
+    position: absolute;
+    top: 40px;
+   
+    border-radius: 1852.2px;
+   
+  }
+
+.about__text {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+
+    color: $text-light-color;
+
+    
+        @media screen and (min-width: $tablet) {
+            
+              font-size: 12px;
+    
+    
+            }
+        
+    
+        @media screen and (min-width:  $desctop) {
+            
+            font-size: 16px;
+              
+            }
+        }
+
+
+
+
+
+
+        
