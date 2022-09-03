@@ -15,7 +15,7 @@
 }
 
 
-.btn__header {
+.btn-filled__header {
     margin-left: 31px;
 
     @media screen and (max-width: ($tablet - 1)) {
@@ -40,16 +40,10 @@
 }
 
 .menu__item {
-
     cursor: pointer;
 
     &:not(:last-child) {
         margin-right: 27px;
-    }
-
-    &:hover,
-    &:focus {
-        color: $brand-second-color;
     }
 }
 
@@ -58,4 +52,9 @@
     font-size: 16px;
     line-height: 1.25;
     color: $text-light-color;
+
+    &:hover,
+    &:focus {
+        color: $brand-second-color;
+    }
 }

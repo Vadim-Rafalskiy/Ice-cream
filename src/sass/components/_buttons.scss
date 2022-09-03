@@ -1,17 +1,22 @@
 /* === BUTTONS === */
-.btn {
+// В кнопках змінюються розміри в залежності від вьюпорту.
+// Перевіряти і змінювати розміри через додатковий клас-модифікатор (--)
+
+// Кнопка з заливкою
+.btn-filled {
     width: 150px;
     height: 42px;
-    padding: 12;
+    padding: 12px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214285714285714;
+
     align-items: center;
     text-align: center;
 
     border-radius: 10px;
-    background: #F8D24E;
+    background: $brand-second-color;
     color: $text-simple-dark-color;
     border: 0;
 
@@ -19,32 +24,161 @@
     &:hover {
         background: $focus-color
     }
+
+    &:disabled {
+        background: $disabled-color;
+    }
 }
 
-.btn-mobile {
-    // display: flex;
-    padding: 0;
+// Модифікатор кнопки "Read more" у $desctop та $tablet
+.btn-filled--middle {
+    width: 168px;
+    height: 42px;
+    line-height: 1.285714285714286;
+}
+
+// Модифікатор кнопки "Our Locations" у $desctop та $tablet
+.btn-filled--bigest {
+    width: 192px;
+    height: 42px;
+    line-height: 1.285714285714286;
+}
+
+
+// Модифікатор "Read more" у $mobile
+.btn-filled--big {
+    width: 176px;
+    height: 44px;
+
+    font-family: $font-second;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142857142857143
+}
+
+// Модифікатор кнопки "Our Locations" у $mobile
+// У збірнику кнопок font-weight: 700;, а у макети - font-weight: 500;
+.btn-filled--small {
+    width: 161px;
+    height: 49px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25
+}
+
+// Модифікатор кнопок модальних вікон у $mobile
+.btn-filled--thin {
+    width: 150px;
+    height: 32px;
+    padding: 7px;
+
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+
+
+// Кнопка з обводкою (розмір у макеті - 137*44px)
+.btn-border {
+    width: 138px;
+    height: 42px;
+    padding: 12px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.285714285714286;
+
+    align-items: center;
+    text-align: center;
+
+    background: transparent;
+    color: $text-simple-dark-color;
+
+    border-radius: 10px;
+    border: 2px;
+    border: $brand-second-color;
+
+    &:focus,
+    &:hover {
+        border: $focus-color
+    }
+
+    &:disabled {
+        border: $disabled-color;
+    }
+}
+
+// Модифікатор для кнопки Franchise у $desctop та $tablet 
+.btn-border--white-text {
+    width: 158px;
+    height: 42px;
+    color: $text-light-color;
+}
+
+// Модифікатор для кнопки Franchise у $mobile
+.btn-border--white-text {
+    width: 161px;
+    height: 49px;
+    color: $text-light-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+// Модифікатор для кнопки Products у $tablet та $mobile
+.btn-border--small {
+    width: 62px;
+    height: 24px;
+    padding: 7px;
+
+    border-radius: 8px;
+
+    font-family: $font-second;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.125;
+}
+
+
+// Кнопка без обводки та заливки ("How it’s made?" у $desctop)
+// У макеті висота 40, але поруч кнопка з висотою 42, тому роблю цю також 42
+.btn-underline {
+    width: 154px;
+    height: 42px;
+    padding: 12px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214285714285714;
+
+    align-items: center;
+    text-align: center;
+
+    background: transparent;
+    color: $brand-second-color;
     border: 0;
-    background-color: transparent;
-    // line-height: 0;
+
+    &:focus,
+    &:hover {
+        color: $focus-color
+    }
+
+    &:disabled {
+        color: $disabled-color;
+    }
 }
 
-.btn-mobile__icon {
-    width: 20px;
-    height: 12px;
-    // background-color: $brand-main-color;
+// Модифікатор "How it’s made?" у $tablet та $mobile
+.btn-underline--small {
+    width: 83px;
+    height: 24px;
+    padding: 7px;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
 }
-
-
-
-// .btn::after {
-//     content: "";
-//     width: 5px;
-//     height: 10px;
-//     margin-left: 16px;
-//     background-image: url("../../images/svgs/arrow-angle.png");
-// }
-
-
 
 /* === /BUTTONS === */
