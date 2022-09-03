@@ -1,17 +1,13 @@
 .hero {
   position: relative;
-  outline: 1px solid tomato;
 
-  // @media screen and (max-width: 767px) {
-  // width: 320px;
   width: 100%;
   padding-top: 61px;
-  // padding-bottom: 240px;
+
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  // }
 
   @media screen and (max-width: 767px) {
     display: flex;
@@ -185,9 +181,6 @@
   }
 }
 
-// .trade-network__list {
-// }
-
 .trade-network__item {
   font-family: $font-main;
   text-align: right;
@@ -209,13 +202,9 @@
   font-size: 8px;
   line-height: 1.25;
 
-  // color: $text-light-color;
-
   @media screen and(min-width:$desctop) {
     font-size: 14px;
     line-height: 1.21;
-
-    // color: $text-dark-color;
   }
 }
 
@@ -239,7 +228,6 @@
 }
 
 .picture-wrapper {
-  // outline: white dotted;
   @media screen and (max-width: 767px) {
     width: 320px;
     height: 240px;
@@ -254,10 +242,6 @@
     left: 9%;
     bottom: -23%;
   }
-  // @media screen and(max-width:767px) {
-  //   left: 9%;
-  //   bottom: -12%;
-  // }
 
   @media screen and(min-width:$tablet) {
     bottom: -16%;
@@ -271,15 +255,11 @@
 }
 
 .hero__picture-dots {
-  // outline: 2px dotted white;
-  // width: 100%;
   position: absolute;
   z-index: 2;
-  // left: 50%;
-  // transform: translateX(-50%);
+
   bottom: 0;
   left: 0;
-  right: 0;
 }
 
 .product-deck {
