@@ -48,6 +48,7 @@
   @media screen and(max-width:767px) {
     max-width: 250px;
   }
+
   @media screen and(min-width:$tablet) {
     max-width: 181px;
   }
@@ -103,6 +104,7 @@
   @media screen and(max-width:767px) {
     margin-top: 32px;
   }
+
   @media screen and(min-width:$tablet) {
     margin-top: 20px;
   }
@@ -132,6 +134,8 @@
   border: 2px solid $brand-second-color;
   border-radius: 8px;
 
+  cursor: pointer;
+
   @media screen and(min-width:$desctop) {
     width: 138px;
     height: 42px;
@@ -142,6 +146,7 @@
     font-size: 14px;
     line-height: 1.29;
   }
+
   &:hover,
   &:focus {
     border-color: $focus-color;
@@ -161,6 +166,8 @@
   color: $brand-second-color;
   background-color: inherit;
   border: 0;
+
+  cursor: pointer;
 
   align-items: center;
   text-decoration-line: underline;
