@@ -21,11 +21,11 @@
     color: $text-simple-dark-color;
     border: 0;
 
-    &:focus {
+    &:hover {
         background: $focus-color;
     }
 
-    &:hover {
+    &:focus {
         background: $focus-color;
         color: $text-light-color;
     }
@@ -75,11 +75,11 @@
     border: 2px solid $brand-second-color;
     border-radius: 10px;
 
-    &:focus {
+    &:hover {
         border-color: $focus-color;
     }
 
-    &:hover {
+    &:focus {
         border-color: $focus-color;
         color: $text-light-color;
     }
@@ -121,11 +121,11 @@
     color: $brand-second-color;
     border: 0;
 
-    &:focus {
+    &:hover {
         color: $focus-color;
     }
 
-    &:hover {
+    &:focus {
         color: $text-light-color;
     }
 
