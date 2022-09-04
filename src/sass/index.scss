@@ -20,6 +20,7 @@
 
 // Капелюх
 @import './layout/header';
+@import "./components/mobile-menu";
 
 // Головна сторінка
 @import './layout/hero';
@@ -33,7 +34,7 @@
 // Нижній колонтитул
 @import './layout/footer';
 
-// Модальны вікна
+// Модальні вікна
 @import './layout/modal-buy';
 @import './layout/modal-made';
 @import './layout/modal-locations';
