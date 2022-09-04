@@ -13,6 +13,18 @@
     />
 
     <!-- SLICK-THEME -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./sass/index.scss" />
@@ -51,10 +63,22 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script>
+      $('.reviewer-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+    </script>
+
     <script>
       $('.slider').slick({
         slidesToShow: 3,
