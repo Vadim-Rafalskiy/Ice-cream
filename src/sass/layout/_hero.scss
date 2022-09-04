@@ -101,6 +101,7 @@
 .hero-btn-wrapper {
   display: flex;
   align-items: baseline;
+  gap: 8px;
   @media screen and(max-width:767px) {
     margin-top: 32px;
   }
@@ -111,25 +112,24 @@
 
   @media screen and(min-width:$desctop) {
     margin-top: 28px;
+    gap: 12px;
   }
 }
 
-.hero-btn {
+.btn-border_m {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 62px;
   height: 24px;
-  margin-right: 16px;
 
   font-family: $font-second;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.13;
 
-  align-items: center;
-  justify-content: center;
-
   color: $text-simple-dark-color;
-  background-color: inherit;
 
   border: 2px solid $brand-second-color;
   border-radius: 8px;
@@ -137,9 +137,8 @@
   cursor: pointer;
 
   @media screen and(min-width:$desctop) {
-    width: 138px;
+    width: 134px;
     height: 42px;
-    margin-right: 32px;
 
     font-family: $font-main;
     font-weight: 600;
@@ -153,10 +152,13 @@
   }
 }
 
-.hero-btn-2 {
-  display: block;
-  padding: 0;
+.btn-underline_m {
+  width: 83px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
   font-family: $font-main;
   font-weight: 600;
@@ -164,23 +166,57 @@
   line-height: 1.25;
 
   color: $brand-second-color;
-  background-color: inherit;
-  border: 0;
 
   cursor: pointer;
-
-  align-items: center;
   text-decoration-line: underline;
+
+  &:hover {
+    color: $focus-color;
+  }
+  &:focus {
+    color: $text-light-color;
+  }
+  &:disabled {
+    color: $disabled-color;
+  }
+
   @media screen and(min-width:$desctop) {
-    height: 44px;
+    width: 152px;
+    height: 42px;
+
     font-size: 14px;
     line-height: 1.21;
   }
-  &:hover,
-  &:focus {
-    color: $focus-color;
-  }
 }
+
+// .hero-btn-2 {
+//   display: block;
+//   padding: 0;
+//   height: 24px;
+
+//   font-family: $font-main;
+//   font-weight: 600;
+//   font-size: 8px;
+//   line-height: 1.25;
+
+//   color: $brand-second-color;
+//   background-color: inherit;
+//   border: 0;
+
+//   cursor: pointer;
+
+//   align-items: center;
+//   text-decoration-line: underline;
+//   @media screen and(min-width:$desctop) {
+//     height: 44px;
+//     font-size: 14px;
+//     line-height: 1.21;
+//   }
+//   &:hover,
+//   &:focus {
+//     color: $focus-color;
+//   }
+// }
 
 .trade-network {
   @media screen and(max-width:767px) {
