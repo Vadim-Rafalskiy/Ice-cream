@@ -146,9 +146,15 @@
     line-height: 1.29;
   }
 
-  &:hover,
+  &:hover {
+    border-color: $focus-color;
+  }
   &:focus {
     border-color: $focus-color;
+    color: $text-light-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
   }
 }
 
@@ -170,6 +176,14 @@
   cursor: pointer;
   text-decoration-line: underline;
 
+  @media screen and(min-width:$desctop) {
+    width: 152px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
   &:hover {
     color: $focus-color;
   }
@@ -179,44 +193,7 @@
   &:disabled {
     color: $disabled-color;
   }
-
-  @media screen and(min-width:$desctop) {
-    width: 152px;
-    height: 42px;
-
-    font-size: 14px;
-    line-height: 1.21;
-  }
 }
-
-// .hero-btn-2 {
-//   display: block;
-//   padding: 0;
-//   height: 24px;
-
-//   font-family: $font-main;
-//   font-weight: 600;
-//   font-size: 8px;
-//   line-height: 1.25;
-
-//   color: $brand-second-color;
-//   background-color: inherit;
-//   border: 0;
-
-//   cursor: pointer;
-
-//   align-items: center;
-//   text-decoration-line: underline;
-//   @media screen and(min-width:$desctop) {
-//     height: 44px;
-//     font-size: 14px;
-//     line-height: 1.21;
-//   }
-//   &:hover,
-//   &:focus {
-//     color: $focus-color;
-//   }
-// }
 
 .trade-network {
   @media screen and(max-width:767px) {
@@ -306,6 +283,7 @@
 }
 
 .product-deck {
+  position: relative;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -355,15 +333,34 @@
 
     color: $text-light-color;
   }
+}
+.hero__info:after {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-  &:after {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (min-width: $tablet) {
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 25px;
+    width: 40px;
+    height: 15px;
+    // color: $text-light-color;
+    outline: 2px dotted tomato;
 
-    @media screen and (min-width: $tablet) {
-      content: '';
-      background-image: url(../images/svgs/Arrow.svg);
-    }
+    background-image: url(../images/svgs/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    fill: $text-light-color;
+  }
+
+  &:hover {
+    width: 50px;
+    height: 20px;
+  }
+  &:focus {
+    width: 50px;
+    height: 20px;
   }
 }
