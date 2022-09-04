@@ -315,6 +315,7 @@
 
 .hero__info {
   @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
     width: 151px;
     font-family: $font-main;
     font-weight: 400;
@@ -325,6 +326,7 @@
   }
 
   @media screen and (min-width: $desctop) {
+    margin-bottom: 32px;
     width: 200px;
     font-family: $font-main;
     font-weight: 400;
@@ -334,33 +336,49 @@
     color: $text-light-color;
   }
 }
-.hero__info:after {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+// .hero__info:after {
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
 
-  @media screen and (min-width: $tablet) {
-    content: '';
-    position: absolute;
-    display: block;
-    margin-top: 25px;
-    width: 40px;
-    height: 15px;
-    // color: $text-light-color;
-    outline: 2px dotted tomato;
+//   @media screen and (min-width: $tablet) {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     margin-top: 25px;
+//     width: 40px;
+//     height: 15px;
+//     // color: $text-light-color;
+//     outline: 2px dotted tomato;
 
-    background-image: url(../images/svgs/Arrow.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    fill: $text-light-color;
-  }
+//     background-image: url(../images/svgs/Arrow.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     fill: $text-light-color;
+//   }
 
-  &:hover {
-    width: 50px;
-    height: 20px;
-  }
-  &:focus {
-    width: 50px;
-    height: 20px;
-  }
+//   &:hover {
+//     width: 50px;
+//     height: 20px;
+//   }
+//   &:focus {
+//     width: 50px;
+//     height: 20px;
+//   }
+// }
+
+.hero__link {
+  outline: 2px dotted tomato;
+  display: block;
+  padding: 10px 0;
+  height: 15px;
+  width: 40px;
+
+  background-image: url(../images/svgs/Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: $text-light-color;
+  padding: auto;
+}
+.hero__icon {
 }
