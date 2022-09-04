@@ -315,7 +315,6 @@
 
 .hero__info {
   @media screen and (min-width: $tablet) {
-    margin-bottom: 20px;
     width: 151px;
     font-family: $font-main;
     font-weight: 400;
@@ -371,14 +370,19 @@
   outline: 2px dotted tomato;
   display: block;
   padding: 10px 0;
-  height: 15px;
+  height: 40px;
   width: 40px;
 
-  background-image: url(../images/svgs/Arrow.svg);
+  background-image: url(../images/svgs/arrow-white-1.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  fill: $text-light-color;
   padding: auto;
+  &:hover {
+    background-image: url(../images/svgs/arrow-white-2.svg);
+  }
+  &:focus {
+    background-image: url(../images/svgs/arrow-white-3.svg);
+  }
 }
 .hero__icon {
 }
