@@ -258,6 +258,7 @@
 .hero__picture-main {
   position: absolute;
   z-index: 3;
+  pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;
     bottom: -23%;
@@ -280,6 +281,7 @@
 
   bottom: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .product-deck {
@@ -313,7 +315,18 @@
   }
 }
 
+.info-wrapper {
+  @media screen and (min-width: $tablet) {
+    height: 152px;
+    padding-top: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 30px;
+  }
+}
+
 .hero__info {
+  margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
     width: 151px;
     font-family: $font-main;
@@ -325,7 +338,6 @@
   }
 
   @media screen and (min-width: $desctop) {
-    margin-bottom: 32px;
     width: 200px;
     font-family: $font-main;
     font-weight: 400;
@@ -335,54 +347,25 @@
     color: $text-light-color;
   }
 }
-// .hero__info:after {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-
-//   @media screen and (min-width: $tablet) {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     margin-top: 25px;
-//     width: 40px;
-//     height: 15px;
-//     // color: $text-light-color;
-//     outline: 2px dotted tomato;
-
-//     background-image: url(../images/svgs/Arrow.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     fill: $text-light-color;
-//   }
-
-//   &:hover {
-//     width: 50px;
-//     height: 20px;
-//   }
-//   &:focus {
-//     width: 50px;
-//     height: 20px;
-//   }
-// }
 
 .hero__link {
-  outline: 2px dotted tomato;
+  // outline: 2px dotted tomato;
   display: block;
-  padding: 10px 0;
-  height: 40px;
-  width: 40px;
+  padding: 5px 0;
+  height: 16px;
+  width: 41px;
 
-  background-image: url(../images/svgs/arrow-white-1.svg);
+  background-image: url(../images/svgs/Arrow_1_w.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: auto;
+  background-size: cover;
+
   &:hover {
-    background-image: url(../images/svgs/arrow-white-2.svg);
+    width: 51px;
+    background-image: url(../images/svgs/Arrow_2_w.svg);
   }
   &:focus {
-    background-image: url(../images/svgs/arrow-white-3.svg);
+    width: 51px;
+    height: 24px;
+    background-image: url(../images/svgs/Arrow_3_w.svg);
   }
-}
-.hero__icon {
 }
