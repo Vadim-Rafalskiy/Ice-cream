@@ -78,7 +78,7 @@ screen and (min-resolution: 3dppx) and (max-width:767px) {
 .products__item{
     flex: 1;
     position: relative;
-    padding: 123px 10px 12px 10px;
+    padding: 123px 0 12px 0;
     text-align: center;
     min-width: 280px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -234,7 +234,7 @@ screen and (min-resolution: 3dppx) and (max-width:767px) {
 }
 
 .products__item {
-    padding: 107px 10px 12px 10px;
+    padding: 107px 0 12px 0;
     min-width: 224px;
 }
 .products__item:nth-child(1)::after {
@@ -295,8 +295,8 @@ screen and (min-resolution: 3dppx) and (min-width:768px) {
 }
 .products__container {
     width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 .section__sup-title {
     @include font(800, 30px, 37px, 0.04em);
@@ -312,7 +312,7 @@ screen and (min-resolution: 3dppx) and (min-width:768px) {
 }
 .products__item{
     min-width: 370px;
-    padding: 166px 10px 52px 10px;
+    padding: 166px 0 52px 0;
 }
 .products__item::before {
     max-width: 300px;
