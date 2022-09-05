@@ -4,6 +4,7 @@
 // Змінні
 @import './utils/variables';
 @import './utils/breakpoints';
+@import './utils/mixin';
 
 // Нормалізація стилів
 @import './base/modern-normalize';
@@ -16,6 +17,7 @@
 @import './components/section';
 @import './components/logo';
 @import './components/socials';
+@import './components/backdrop';
 
 // Капелюх
 @import './layout/header';

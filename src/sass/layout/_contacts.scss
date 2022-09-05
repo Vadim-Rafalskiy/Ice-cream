@@ -1,0 +1,280 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container_contacts {
+    margin-bottom: 32px;
+  }
+  .contacts {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 320px;
+    padding: 40px 32px;
+    font-family: $font-main;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts_title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: $text-dark-color;
+    border: none;
+    border-radius: 4px;
+    background-color: $brand-second-color;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .contacts_item {
+    margin-bottom: 24px;
+
+    &:not(:last-child) {
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  .contacts_list-titel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: $text-simple-dark-color;
+    margin-bottom: 8px;
+  }
+  .contacts_list-adress {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: $card-third-color;
+  }
+  .contacts_list-schedule {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: $text-simple-dark-color;
+  }
+  .contacts_list-hours {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: $disabled-color;
+  }
+  .contacts_link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: $card-third-color;
+  }
+  .contact-btn__locations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $text-simple-dark-color;
+    background-color: $brand-second-color;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    width: 161px;
+    height: 49px;
+  }
+  .contact-btn__locations-icon {
+    margin-left: 7px;
+  }
+  .contact-btn__franchise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $text-simple-dark-color;
+    background-color: $brand-second-color;
+    border: 2px solid $brand-second-color;
+    border-radius: 10px;
+    width: 161px;
+    height: 49px;
+    background-color: $brand-main-color;
+  }
+  .contact-btn__franchise-icon {
+    margin-left: 7px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container_second {
+    position: relative;
+    top: -300px;
+  }
+  .container_contacts {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  .contacts {
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 100%;
+    padding: 40px 27px 40px 24px;
+    font-family: $font-main;
+  }
+  .contacts_title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $text-dark-color;
+    border: none;
+    border-radius: 4px;
+    background-color: $brand-second-color;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .contacts_item {
+    margin-bottom: 32px;
+    &:not(:last-child) {
+      padding-bottom: 26px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  .contacts_list-titel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: $text-simple-dark-color;
+    margin-bottom: 12px;
+  }
+  .contacts_list-adress {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: $card-third-color;
+  }
+  .contacts_list-schedule {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: $text-dark-color;
+  }
+  .contacts_list-hours {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: $disabled-color;
+  }
+  .contacts_link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    color: $card-third-color;
+  }
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .contact-btn__locations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $text-simple-dark-color;
+    background-color: $brand-second-color;
+    border: none;
+    border-radius: 10px;
+    width: 192px;
+    height: 42px;
+  }
+  .contact-btn__locations-icon {
+    margin-left: 12px;
+  }
+  .contact-btn__franchise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $text-light-color;
+    border: 2px solid $brand-second-color;
+    border-radius: 10px;
+    background-color: $brand-main-color;
+    width: 158px;
+    height: 42px;
+  }
+  .contact-btn__franchise-icon {
+    margin-left: 12px;
+    fill: $text-light-color;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $desctop) {
+  .container_second {
+    position: relative;
+    top: -100px;
+  }
+  .container_contacts {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .contacts {
+    padding: 40px;
+  }
+  .contacts_item:not(:last-child) {
+    padding-bottom: 26px;
+  }
+  .contacts_list-titel {
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 8px;
+  }
+  .contacts_list-adress {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .contacts_list-schedule {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  .contacts_list-hours {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  .contacts_link {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .contact-btn {
+    gap: 18px;
+  }
+}
