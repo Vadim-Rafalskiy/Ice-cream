@@ -50,6 +50,7 @@
 .modal-franchise__title{
     font-family: $font-title;
     @include font(400, 20px, 28px, 0.04em);
+    color: $text-dark-color;
     text-align: center;
     max-width: 322px;
     margin: 0 auto 24px;
@@ -74,6 +75,7 @@
     height: 42px;
     border: 1px solid $brand-main-color;
     border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
     transition: border-color $transition;
     @include font(400, 14px, 20px, 0.04em);
     padding: 11px 16px;
@@ -96,6 +98,7 @@
     padding: 11px 16px;
     border: 1px solid $brand-main-color;
     border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
     @include font(400, 14px, 20px, 0.04em);
     cursor: pointer;
     transition: border-color $transition;
@@ -138,30 +141,37 @@
     height: 95%;
 }
 .backdrop-franchise__modal{
-    padding: 20px 40px;
+    padding: 28px;
 }
 .modal-franchise__close-btn {
-    top: 15px;
-    right: 15px;
+    top: 8px;
+    right: 8px;
 }
 .modal-franchise__title {
-    @include font(400, 18px, 22px, 0.03em);
-    max-width: 322px;
-    margin: 0 auto 16px;
+    @include font(400, 16px, 24px, 0.03em);
+    margin: 0 auto 20px;
 }
 
 .modal-franchise__desc {
-    @include font(400, 14px, 16px, 0.02em);
-    margin-bottom: 22px;
+    @include font(400, 14px, 20px, 0.02em);
+    margin-bottom: 24px;
 }
 .franchise-form {
     justify-content: space-between0;
-    row-gap: 14px;
+    row-gap: 12px;
 }
 .franchise-form__label:not(:last-child) {
     margin-bottom: 0px;
 }
+.franchise-form__input{
+    @include font(400, 12px, 17px, 0.04em);
+    padding: 8px 12px 7px 12px;
+}
+.franchise-form__message{
+    @include font(400, 12px, 17px, 0.04em);
+    padding:8px 12px 7px 12px;
+}
 .franchise-form__submit {
-    margin: 0 auto;
+    margin: 12px auto 0;
 }
 }
