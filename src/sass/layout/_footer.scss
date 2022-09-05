@@ -1,6 +1,6 @@
 .footer-container {
   border-bottom: 1px solid #e1e1e1;
-  @media screen and(min-width:$mobile) {
+  @media screen and(max-width:767px) {
     padding-bottom: 40px;
   }
   @media screen and(min-width:$tablet) {
@@ -14,8 +14,16 @@
 }
 
 .footer-desc {
-  @media screen and(min-width:$tablet) {
-    display: flex;
+  width: 250px;
+
+  @media screen and(max-width:767px) {
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+  }
+  @media screen and(min-width:$desctop) {
+    width: 510px;
   }
 }
 
@@ -52,9 +60,16 @@
   }
 }
 
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
 .socials {
   display: flex;
-  justify-content: end;
+
   margin-bottom: 40px;
   @media screen and(max-width:767px) {
     gap: 28px;
@@ -79,29 +94,52 @@
   fill: inherit;
 }
 
+.footer-contacts {
+  @include font(700, 12px, 22px, 0.02em);
+  color: $text-dark-color;
+
+  @media screen and(min-width:$tablet) {
+    @include font(700, 14px, 26px, 0.02em);
+  }
+
+  @media screen and(min-width:$desctop) {
+    @include font(700, 16px, 30px, 0.02em);
+  }
+}
+
 .footer-contacts__link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
-.footer-contacts__desc {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  color: #131313;
-}
+// .footer-contacts__desc {
+
+// }
 
 .footer-finally-desc {
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
+  border-top: 1px solid #e1e1e1;
+
+  @include font(700, 14px, 21px, 0.02em);
+  color: $text-dark-color;
   color: #7a7a7a;
+  padding-top: 16px;
+  padding-bottom: 62px;
+
+  @media screen and(min-width:$tablet) {
+    @include font(700, 14px, 26px, 0.02em);
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    @include font(700, 12px, 22px, 0.02em);
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.copyright {
+  @media screen and(max-width:767px) {
+    display: block;
+  }
 }
