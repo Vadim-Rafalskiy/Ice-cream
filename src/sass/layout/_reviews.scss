@@ -1,18 +1,18 @@
 .section__reviewers {
-    padding-top: 80px;
-    padding-bottom: 48px;
+    padding-top: 186px;
+    padding-bottom: 394px;
     background-image: url("../images/mobile/bg-fourth-screen-1x-min.jpg");
     background-size: cover;
 
     @media screen and (min-width: $tablet) {
-        padding-top: 80px;
-        padding-bottom: 48px;
+        padding-top: 220px;
+        padding-bottom: 384px;
         background-image: url("../images/tablet/bg-fourth-screen-1x-min.jpg");
     }
 
     @media screen and (min-width: $desctop) {
-        padding-top: 128px;
-        padding-bottom: 100px;
+        padding-top: 480px;
+        padding-bottom: 200px;
         background-image: url("../images/desctop/bg-fourth-screen-1x-min.jpg");
     }
 }
