@@ -17,6 +17,22 @@
     }
 }
 
+.container__reviewers {
+    margin-bottom: 394px;
+    margin-top: 186px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 384px;
+        margin-top: 220px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 200px;
+        margin-top: 450px;
+    }
+
+}
+
 .reviewers {
     display: flex;
     flex-direction: column;

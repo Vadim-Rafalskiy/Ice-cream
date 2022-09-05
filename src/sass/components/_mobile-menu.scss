@@ -9,8 +9,8 @@
     height: 100vh;
     text-align: center;
 
-    transform: translate(120%, 0);
-    transition: transform 1250ms cubic-bezier(.48, 1.75, .55, .91);
+    transform: translate(0, -100%);
+    transition: transform 750ms cubic-bezier(.48, 1.75, .55, .91);
 
     @media screen and (min-width: $desctop) {
         display: none;
