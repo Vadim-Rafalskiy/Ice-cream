@@ -2,6 +2,7 @@
   <div class="container">
     <!-- svg or img? -->
     <div class="header">
+      <h2 class="hidden">navigation</h2>
       <a href="./" class="logo">
         <svg class="logo__image">
           <use href="./images/icons.svg#logo" class="logo__icon"></use>
@@ -30,19 +31,12 @@
 
       <button type="button" class="btn-mobile-open" data-menu-open>
         <picture>
-          <source
-            srcset="
+          <source srcset="
               ./images/svgs/Burger-1x.png 1x,
               ./images/svgs/Burger-2x.png 2x,
               ./images/svgs/Burger-3x.png 3x
-            "
-            media="(max-width: 1199px)"
-          />
-          <img
-            src="./images/svgs/Burger-1x.png"
-            alt="open menu"
-            class="btn-mobile-open__icon"
-          />
+            " media="(max-width: 1199px)" />
+          <img src="./images/svgs/Burger-1x.png" alt="open menu" class="btn-mobile-open__icon" />
         </picture>
       </button>
 
