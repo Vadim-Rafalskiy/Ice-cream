@@ -261,16 +261,16 @@
   pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;
-    bottom: -23%;
+    bottom: -22.5%;
   }
 
   @media screen and(min-width:$tablet) {
-    bottom: -16%;
+    bottom: -17%;
     left: 48%;
   }
 
   @media screen and(min-width:$desctop) {
-    bottom: -16%;
+    bottom: -16.3%;
     left: 48%;
   }
 }
