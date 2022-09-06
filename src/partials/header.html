@@ -1,7 +1,8 @@
-<section id="home">
+<section>
   <div class="container">
     <!-- svg or img? -->
     <div class="header">
+      <h2 class="hidden">navigation</h2>
       <a href="./" class="logo">
         <svg class="logo__image">
           <use href="./images/icons.svg#logo" class="logo__icon"></use>
@@ -13,9 +14,9 @@
           <li class="menu__item">
             <a href="#home" class="menu__link">Home</a>
           </li>
-          <li class="menu__item">
+          <!-- <li class="menu__item">
             <a href="#about" class="menu__link">About us</a>
-          </li>
+          </li> -->
           <li class="menu__item">
             <a href="#advantages" class="menu__link">How it's made?</a>
           </li>
@@ -30,19 +31,12 @@
 
       <button type="button" class="btn-mobile-open" data-menu-open>
         <picture>
-          <source
-            srcset="
+          <source srcset="
               ./images/svgs/Burger-1x.png 1x,
               ./images/svgs/Burger-2x.png 2x,
               ./images/svgs/Burger-3x.png 3x
-            "
-            media="(max-width: 1199px)"
-          />
-          <img
-            src="./images/svgs/Burger-1x.png"
-            alt="open menu"
-            class="btn-mobile-open__icon"
-          />
+            " media="(max-width: 1199px)" />
+          <img src="./images/svgs/Burger-1x.png" alt="open menu" class="btn-mobile-open__icon" />
         </picture>
       </button>
 
