@@ -144,3 +144,35 @@
 }
 
 /* === /BUTTONS === */
+.top__image {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+
+  width: 100px;
+  // height: 42px;
+  // padding: 12px;
+
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 1.285714285714286;
+
+  // align-items: center;
+  // text-align: center;
+
+  // border-radius: 10px;
+  // background: $brand-second-color;
+  // color: $text-simple-dark-color;
+  // border: 0;
+  fill: $card-second-color;
+
+  transition: fill $transition, background $transition;
+
+  &:hover {
+    fill: $focus-color;
+  }
+
+  &:focus {
+    fill: $text-light-color;
+  }
+}
