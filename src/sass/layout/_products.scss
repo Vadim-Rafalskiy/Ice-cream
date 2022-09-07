@@ -1,10 +1,10 @@
 .products {
-  background-image: url('../images/mobile/bg-fourth-screen-1x-min.jpg');
+  background-image: url('../images/mobile/bg-second-screen-1x-min.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left top;
-  margin-left: auto;
-  margin-right: auto;
+  // background-position: left top;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -12,7 +12,7 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .products {
-    background-image: url('../images/mobile/bg-fourth-screen-2x-min.jpg');
+    background-image: url('../images/mobile/bg-second-screen-2x-min.jpg');
   }
   .products__item:nth-child(1)::after {
     background-image: url('../images/mobile/products-mobile-png/products01@2x.png');
@@ -28,7 +28,7 @@
   screen and (min-resolution: 288dpi) and (max-width: 767px),
   screen and (min-resolution: 3dppx) and (max-width: 767px) {
   .products {
-    background-image: url('../images/mobile/bg-fourth-screen-3x-min.jpg');
+    background-image: url('../images/mobile/bg-second-screen-3x-min.jpg');
   }
 }
 .products__container {
