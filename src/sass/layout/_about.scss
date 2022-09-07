@@ -1,6 +1,9 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 42px;
+  // padding-bottom: 42px;
+  // @media screen and (min-width: $tablet) {
+  //   padding-bottom: 53px;
+  // }
 
   // @media screen and (min-width: 480px) and (max-width: 767px) {
   //   max-width: 320px;
@@ -12,10 +15,10 @@
   //   padding-top: 60px;
   // }
 
-  // @media screen and (min-width: $desctop) {
-  //   padding-top: 60px;
-  //   padding-bottom: 86px;
-  // }
+  @media screen and (min-width: $desctop) {
+    // padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container__advantages {
@@ -42,70 +45,76 @@
   color: $text-dark-color;
   border: 0;
 }
+
 .button {
   margin-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 48px;
+  }
 }
 
 .label__title {
-  font-family: $font-main;
-  margin-bottom: 12px;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 1.23;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222222222222222;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  margin-bottom: 12px;
 
   color: $text-light-color;
 
   @media screen and (min-width: $tablet) {
+    font-weight: 800;
     font-size: 22px;
+    line-height: 1.227272727272727;
   }
 
   @media screen and (min-width: $desctop) {
     font-size: 30px;
+    line-height: 1.233333333333333;
   }
 }
 
 .about__title {
   font-family: $font-title;
-  font-weight: 400;
   font-size: 30px;
-  line-height: 1.25;
+  line-height: 1.266666666666667;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-light-color;
 
   @media screen and (min-width: $tablet) {
     font-size: 34px;
+    line-height: 1.264705882352941;
+    letter-spacing: 0.06em;
   }
 
   @media screen and (min-width: $desctop) {
     font-size: 36px;
+    line-height: 1.25;
   }
 }
 
 .text-wrapper {
   width: 220px;
-  // margin-left: 30px;
-  margin-top: 80px;
+  margin-top: 40px;
 
   @media screen and (max-width: $tablet) {
     text-align: center;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 300px;
-
+    width: 336px;
     margin-top: 79px;
-    margin-left: 400px;
-    margin-right: 32px;
+    margin-left: 368px;
   }
 
   @media screen and (min-width: $desctop) {
     margin-top: 172px;
-    margin-left: 615px;
+    margin-left: 599px;
     width: 463px;
   }
 }
@@ -113,23 +122,24 @@
 .img-wrapper {
   margin-top: 32px;
 
-  width: 279px;
+  width: 280px;
   height: 300px;
   position: relative;
+  align-items: center;
+
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
     #d9d9d9;
-  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  border-radius: 250px;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140.182px;
 
   @media screen and (min-width: $tablet) {
-    width: 331px;
+    width: 336px;
     height: 355px;
     margin-top: 40px;
-    margin-left: 16px;
 
     position: absolute;
     background: linear-gradient(
@@ -143,10 +153,9 @@
   }
 
   @media screen and (min-width: $desctop) {
-    width: 500px;
+    width: 490px;
     height: 529px;
     margin-top: 82px;
-    margin-left: 16px;
 
     position: absolute;
     background: linear-gradient(
@@ -161,11 +170,22 @@
 }
 
 .about__img {
-  width: 500px;
+  width: 280px;
   position: absolute;
-  top: 40px;
+  top: 21px;
+  border-radius: 1038.58px;
 
-  border-radius: 1852.2px;
+  @media screen and (min-width: $tablet) {
+    width: 336px;
+    top: 26px;
+    border-radius: 1228.96px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 490px;
+    top: 39px;
+    border-radius: 1852.2px;
+  }
 }
 
 .about__text {
@@ -179,12 +199,12 @@
   color: $text-light-color;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
     font-size: 12px;
   }
 
   @media screen and (min-width: $desctop) {
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
     font-size: 16px;
   }
 }
@@ -194,7 +214,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.583333333333333;
-  // letter-spacing: 0.04em;
+  margin-top: 8px;
 
   color: $text-light-color;
 
@@ -204,5 +224,12 @@
 
   @media screen and (min-width: $desctop) {
     font-size: 16px;
+  }
+}
+
+.about__text-change--add {
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: none;
+    margin-top: 8px;
   }
 }
