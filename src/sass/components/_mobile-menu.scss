@@ -63,11 +63,13 @@
   font-size: 32px;
   line-height: 1.22;
   color: $text-light-color;
-}
 
-.mobile-menu__link:hover,
-.mobile-menu__link:focus {
-  color: $text-simple-dark-color;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $text-simple-dark-color;
+  }
 }
 
 // КНОПКИ
