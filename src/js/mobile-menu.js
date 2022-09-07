@@ -2,6 +2,7 @@
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
+    closeMenuBtnOrder: document.querySelector('[data-menu-close-order]'),
     menu: document.querySelector('[data-menu]'),
     
     closeMenuBtnHome: document.querySelector('[data-menu-close-home]'),
@@ -12,6 +13,7 @@
   
   refs.openMenuBtn.addEventListener('click', toggleModal);
   refs.closeMenuBtn.addEventListener('click', toggleModal);
+  refs.closeMenuBtnOrder.addEventListener('click', toggleModal);
   
   refs.closeMenuBtnHome.addEventListener('click', toggleModal);
   refs.closeMenuBtnAdvantages.addEventListener('click', toggleModal);
