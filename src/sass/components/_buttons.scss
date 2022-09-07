@@ -144,7 +144,7 @@
 }
 
 /* === /BUTTONS === */
-.topbutton {
+.top__image {
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -164,14 +164,15 @@
   // background: $brand-second-color;
   // color: $text-simple-dark-color;
   // border: 0;
+  fill: $card-second-color;
 
-  transition: color $transition, background $transition;
+  transition: fill $transition, background $transition;
 
   &:hover {
-    color: $focus-color;
+    fill: $focus-color;
   }
 
   &:focus {
-    color: $text-light-color;
+    fill: $text-light-color;
   }
 }
