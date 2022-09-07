@@ -65,8 +65,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  // width: 16px;
+  // height: 16px;
   // border-radius: 50%;
   background-color: transparent;
   border: none;
@@ -80,7 +80,12 @@
 
   .modal__btn:hover &,
   .modal__btn:focus & {
-    scale: (1.2);
+    scale: (1.5);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
   }
 }
 
