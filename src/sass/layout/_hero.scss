@@ -249,9 +249,14 @@
 
 .picture-wrapper {
   @media screen and (max-width: 767px) {
-    width: 320px;
+    max-width: 320px;
     height: 240px;
     position: relative;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    // height: 240px;
+    // position: relative;
   }
 }
 
@@ -261,7 +266,7 @@
   pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;
-    bottom: -22.5%;
+    bottom: -18.5%;
   }
 
   @media screen and(min-width:$tablet) {
