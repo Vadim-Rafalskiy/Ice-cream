@@ -32,83 +32,88 @@
 }
 
 .modal {
-  border: 4px solid yellow;
-
   display: flex;
   flex-direction: column;
 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition);
+  width: calc(100% - 40px);
+  max-width: 280px;
+  padding: 28px;
 
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 
-  width: calc(100vw - 30px);
-  margin: auto;
+  background-color: $text-light-color;
 
-  user-select: none;
+  transform: translate(-50%, -50%);
+  // transition: transform var(--transition);
 
-  @media screen and (min-width: 320px) and (max-width: (1200px - 1px)) {
-    display: none;
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 528px;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 60px;
+    max-width: 568px;
   }
 }
 
 .modal__btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  padding: 0;
+  margin: 0;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  // border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #555555;
-  padding: 10px;
-
-  &:hover,
-  &:focus {
-    border-color: rgb(0, 0, 255);
-  }
+  border: none;
 }
 
-.modal .modal__clone {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal__close {
+  width: 16px;
+  height: 16px;
+  scale: (1);
+  transition: scale $transition;
 
   .modal__btn:hover &,
   .modal__btn:focus & {
-    fill: burlywood;
+    scale: (1.2);
+  }
+}
+
+.video {
+  margin-bottom: 20px;
+  // width: 224px;
+  // height: 200px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 20px;
+
+  font-family: $font-title;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: $text-dark-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
   }
 }
 
 .modal__text {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgb(19, 3, 3);
-}
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 1.428571428571429;
 
-.modal__title {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: pink;
+  color: $text-dark-color;
 }
