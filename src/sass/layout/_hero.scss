@@ -4,8 +4,8 @@
   width: 100%;
   padding-top: 61px;
 
-  // padding-left: 20px;
-  // padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -37,10 +37,6 @@
   }
 }
 
-.hero__container {
-  position: relative;
-}
-
 .main-title-wrapper {
   @media screen and(min-width:$tablet) {
     display: flex;
@@ -51,7 +47,6 @@
 .main-title-inner {
   @media screen and(max-width:767px) {
     max-width: 250px;
-    margin: 0 auto;
   }
 
   @media screen and(min-width:$tablet) {
@@ -256,7 +251,7 @@
   @media screen and (max-width: 767px) {
     width: 320px;
     height: 240px;
-    // position: relative;
+    position: relative;
   }
 }
 
@@ -266,7 +261,7 @@
   pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;
-    bottom: -11.7%;
+    bottom: -22.5%;
   }
 
   @media screen and(min-width:$tablet) {

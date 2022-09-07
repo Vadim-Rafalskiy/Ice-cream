@@ -268,6 +268,11 @@
   .products__title {
     @include font(700, 22px, 27px, 0.04em);
   }
+
+  .products__desc {
+    // padding-left: 26px;
+    // padding-right: 26px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
