@@ -4,17 +4,12 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-@media screen and (min-width: $mobile) {
-  .container {
-    width: 480px;
-  }
+  max-width: 480px;
 }
 
 @media screen and (min-width: $tablet) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -22,7 +17,7 @@
 
 @media screen and (min-width: $desctop) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
   }

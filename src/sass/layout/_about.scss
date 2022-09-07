@@ -85,7 +85,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-light-color;
-  width: 200px;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    width: 200px;
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 34px;
@@ -202,6 +205,7 @@
   @media screen and (min-width: $tablet) {
     // margin-bottom: 8px;
     font-size: 12px;
+    text-align: start;
   }
 
   @media screen and (min-width: $desctop) {
@@ -221,6 +225,7 @@
 
   @media screen and (min-width: $tablet) {
     font-size: 12px;
+    text-align: start;
   }
 
   @media screen and (min-width: $desctop) {
@@ -232,5 +237,6 @@
   @media screen and (max-width: ($tablet - 1px)) {
     display: none;
     margin-top: 8px;
+    text-align: start;
   }
 }
