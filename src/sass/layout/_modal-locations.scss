@@ -129,9 +129,9 @@
 
   background-color: rgba(0, 0, 0, 0.5);
 
-  transition-property: opacity, visibility;
-  transition-duration: var(--standart-transition-time);
-  transition-timing-function: var(--standart-cubic-bezier);
+  // transition-property: opacity, visibility;
+  // transition-duration: var(--standart-transition-time);
+  // transition-timing-function: var(--standart-cubic-bezier);
 
   &.is-hidden {
     opacity: 0;
