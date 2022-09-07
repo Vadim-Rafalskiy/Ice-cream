@@ -87,32 +87,36 @@
 }
 
 .modal-close-btn {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
   top: 8px;
   right: 8px;
-
-  width: 30px;
-  height: 30px;
+  border: 0;
+  padding: 0px;
   background-color: transparent;
-  border: none;
 
-  @media screen and(min-width:$tablet) {
-    width: 35px;
-    height: 35px;
+  @media screen and(min-width: $tablet) {
+    top: 20px;
+    right: 20px;
   }
 }
 
 .modal-close-btn__icon {
-  transition-property: fill;
-  transition-duration: var(--standart-transition-time);
-  transition-timing-function: var(--standart-cubic-bezier);
+  width: 16px;
+  height: 16px;
+  scale: (1);
+  transition: scale $transition;
 
-  .modal-close-btn:hover & {
-    fill: var(--color-accent);
+  @media screen and(min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    scale: (1.5);
   }
 }
 
