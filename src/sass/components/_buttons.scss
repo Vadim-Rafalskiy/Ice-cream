@@ -144,3 +144,34 @@
 }
 
 /* === /BUTTONS === */
+.topbutton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+
+  width: 100px;
+  // height: 42px;
+  // padding: 12px;
+
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 1.285714285714286;
+
+  // align-items: center;
+  // text-align: center;
+
+  // border-radius: 10px;
+  // background: $brand-second-color;
+  // color: $text-simple-dark-color;
+  // border: 0;
+
+  transition: color $transition, background $transition;
+
+  &:hover {
+    color: $focus-color;
+  }
+
+  &:focus {
+    color: $text-light-color;
+  }
+}
