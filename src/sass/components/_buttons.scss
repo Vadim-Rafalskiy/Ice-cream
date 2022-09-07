@@ -20,6 +20,8 @@
   color: $text-simple-dark-color;
   border: 0;
 
+  transition: color $transition, background $transition;
+
   &:hover {
     background: $focus-color;
   }
@@ -72,6 +74,8 @@
   border: 2px solid $brand-second-color;
   border-radius: 10px;
 
+  transition: border-color $transition, color $transition;
+
   &:hover {
     border-color: $focus-color;
   }
@@ -116,6 +120,8 @@
   background: transparent;
   color: $brand-second-color;
   border: 0;
+
+  transition: color $transition;
 
   &:hover {
     color: $focus-color;
